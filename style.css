@@ -5,3 +5,45 @@
     box-sizing: border-box;
     font-family: "Italiana", serif;
 }
+
+html{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 5rem;
+}
+h3{
+    font-size: ;
+}
+p{
+    font-size: 1rem;
+}
+
+header,
+main,
+nav,
+label,
+footer{
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+.theme-toggler:checked ~ header,
+.theme-toggler:checked ~ main,
+.theme-toggler:checked ~ nav,
+.theme-toggler:checked ~ label,
+.theme-toggler:checked ~ footer{
+    --white-color: #fff;
+    --black-color: #000;
+}
+.fa-sun {
+    opacity: 1;
+}
+.fa-moon {
+    opacity: 0.1;
+}
