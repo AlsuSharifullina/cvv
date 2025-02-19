@@ -9,6 +9,7 @@
     <title>Alsu Sharifullina</title>
 </head>
 <body>
+    <div class="page-content">
     <header class="header">
         <div class="header__theme">
             <input type="checkbox" id="theme-toggler" class="theme-toggler">
@@ -16,6 +17,8 @@
                 <img src="./img/moon2.png" alt="moon2" class="fa-moon">
             </label>
         </div>
+        <!-- меню -->
+        <input type="checkbox" class="menu_toggler" id="menu_toggler">
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a href="#about">about</a></li>
@@ -25,15 +28,41 @@
                 <li class="header__item"><a href="#contacts">contacts</a></li>
             </ul>
         </nav>
+
+        <!-- menu burger -->
+
+        <label class="menu_burger-button" for="menu_toggler">
+            <span class="menu_line"></span>
+        </label>
+
+        <nav class="header__nav-burger">
+            <ul class="nav__list-burger">
+                <li class="header__item"><a href="#about">about</a></li>
+                <li class="header__item"><a href="#skills">skills</a></li>
+                <li class="header__item"><a href="#projects">projects</a></li>
+                <li class="header__item"><a href="#experience">experience</a></li>
+                <li class="header__item"><a href="#contacts">contacts</a></li>
+            </ul>
+        </nav>
+
     </header>
 <!-- end header -->
 
 <main>
     <section class="hero">
-        
+        <div class="hero__left">
+            <p class="hero__text">Hello, I'm</p>
+            <h2 class="hero__sub-title">Alsu</h2>
+            <h1 class="hero__title">front-end developer </h1>
+        </div>
+        <div class="hero__right">
+            <img src="./img/photo.png" alt="photo">
+        </div>
     </section>
-</main>
 
+    
+</main>
+</div>
 
 
     <script src="script.js"></script>
