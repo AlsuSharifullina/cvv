@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,63 +9,87 @@
     <script src="https://kit.fontawesome.com/4ccf7ed77e.js" crossorigin="anonymous"></script>
     <title>Alsu Sharifullina</title>
 </head>
+
 <body>
     <div class="page-content">
-    <header class="header">
-        <div class="header__theme">
-            <input type="checkbox" id="theme-toggler" class="theme-toggler">
-            <label for="theme-toggler" class="theme-toggler__label">
-                <img src="./img/moon2.png" alt="moon2" class="fa-moon">
+        <header class="header">
+            <div class="header__theme">
+                <input type="checkbox" id="theme-toggler" class="theme-toggler">
+                <label for="theme-toggler" class="theme-toggler__label">
+                    <img src="./img/moon2.png" alt="moon2" class="fa-moon">
+                </label>
+            </div>
+            <!-- меню -->
+            <input type="checkbox" class="menu_toggler" id="menu_toggler">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#about">about</a></li>
+                    <li class="header__item"><a href="#skills">skills</a></li>
+                    <li class="header__item"><a href="#projects">projects</a></li>
+                    <li class="header__item"><a href="#experience">experience</a></li>
+                    <li class="header__item"><a href="#contacts">contacts</a></li>
+                </ul>
+            </nav>
+
+            <!-- menu burger -->
+
+            <label class="menu_burger-button" for="menu_toggler">
+                <span class="menu_line"></span>
             </label>
-        </div>
-        <!-- меню -->
-        <input type="checkbox" class="menu_toggler" id="menu_toggler">
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a href="#about">about</a></li>
-                <li class="header__item"><a href="#skills">skills</a></li>
-                <li class="header__item"><a href="#projects">projects</a></li>
-                <li class="header__item"><a href="#experience">experience</a></li>
-                <li class="header__item"><a href="#contacts">contacts</a></li>
-            </ul>
-        </nav>
 
-        <!-- menu burger -->
+            <nav class="header__nav-burger">
+                <ul class="nav__list-burger">
+                    <li class="header__item"><a href="#about">about</a></li>
+                    <li class="header__item"><a href="#skills">skills</a></li>
+                    <li class="header__item"><a href="#projects">projects</a></li>
+                    <li class="header__item"><a href="#experience">experience</a></li>
+                    <li class="header__item"><a href="#contacts">contacts</a></li>
+                </ul>
+            </nav>
 
-        <label class="menu_burger-button" for="menu_toggler">
-            <span class="menu_line"></span>
-        </label>
+        </header>
+        <!-- end header -->
 
-        <nav class="header__nav-burger">
-            <ul class="nav__list-burger">
-                <li class="header__item"><a href="#about">about</a></li>
-                <li class="header__item"><a href="#skills">skills</a></li>
-                <li class="header__item"><a href="#projects">projects</a></li>
-                <li class="header__item"><a href="#experience">experience</a></li>
-                <li class="header__item"><a href="#contacts">contacts</a></li>
-            </ul>
-        </nav>
+        <main>
+            <section class="hero">
+                <div class="hero__left">
+                    <p class="hero__text">Hello, I'm</p>
+                    <h3 class="hero__sub-title">Alsu</h3>
+                    <h1 class="hero__title">front-end developer </h1>
+                </div>
+                <div class="hero__right">
+                    <img src="./img/photo.png" alt="photo">
+                </div>
+            </section>
+            <!-- end hero -->
+            <section class="about">
+                <div class="about__left">
+                    <q class="about__quote">Development is not an end point, but a constant process. The main thing is not to stop</q>
+                    <h2 class="about__title">about</h2>
+                </div>
+                <div class="about__right">
+                    <p class="about__text">
+                        Frontend development for me is not just code, but a way to create user-friendly, thoughtful and
+                        aesthetically pleasing interfaces. I believe that a good website is one where technology works
+                        in harmony with design and the user experience becomes intuitive. This is what inspires me to
+                        evolve in my profession and constantly learn new tools.
 
-    </header>
-<!-- end header -->
+                        My path is one of continuous learning: courses, seminars, working with real projects. I value
+                        structure, I am able to plan tasks, work in a team and analyze details to find optimal
+                        solutions.It is important for me to be part of a team where professionalism, development and
+                        openness are valued. I am a quick learner, adapt to new challenges and am ready to bring real
+                        value to projects.
+                    </p>
+                </div>
 
-<main>
-    <section class="hero">
-        <div class="hero__left">
-            <p class="hero__text">Hello, I'm</p>
-            <h2 class="hero__sub-title">Alsu</h2>
-            <h1 class="hero__title">front-end developer </h1>
-        </div>
-        <div class="hero__right">
-            <img src="./img/photo.png" alt="photo">
-        </div>
-    </section>
+            </section>
 
-    
-</main>
-</div>
+
+        </main>
+    </div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
