@@ -64,7 +64,7 @@ p{
 .header {
     max-width: 1400px;
     width: 100%;
-    height: 10vh;
+    min-height: 10vh;
     margin: 0 auto;
     padding: 20px 0;
     display: flex;
@@ -79,8 +79,10 @@ p{
 
 .header__list {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
+    align-items:center ;
     list-style: none;
 }
 
@@ -141,7 +143,7 @@ p{
     width: 100%;
     min-height: 90vh;
     height: 100%;
-    margin: 100px 0;
+    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -269,18 +271,18 @@ p{
     min-height: 75vh;
     height: 100%;
     display: flex;
-    margin: 100px 0;
+    margin: 100px auto;
     
 }
 .about__left {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .about__quote {
     width: 50%;
+    font-size: 0.8rem;
     font-family: var(--oswald);
     color: var(--text--color);
     text-transform: uppercase;
@@ -289,7 +291,6 @@ p{
 }
 .about__right {
     width: 50%;
-    height: 100%;
 }
 .about__text {
     font-family: var(--oswald);
@@ -298,8 +299,107 @@ p{
 }
 /* end start */
 
+/* start skills */
+.skills {
+    max-width: 1400px;
+    width: 100%;
+    min-height: 75vh;
+    height: 100%;
+    display: flex;
+    margin: 100px auto;
+}
+.skills__left {
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
+.skills__title {
+}
+.skills__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
 
+/* accordoin */
+/* Общие стили аккордеона */
+.accordion-button {
+    background-color: var(--bg--color);
+    color: var(--text--color);
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
+/* Убираем голубое выделение при клике */
+.accordion-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Стиль для открытой кнопки аккордеона */
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg--color);
+    color: var(--text--color);
+}
+
+/* Стиль для содержимого аккордеона */
+.accordion-body {
+    background-color: var(--bg--color);
+    color: var(--text--color);
+}
+
+/* Настройка стрелки аккордеона */
+.accordion-button::after {
+    filter: brightness(0); /* Делаем стрелку черной */
+}
+
+/* Если тема темная, меняем цвет стрелки */
+body.dark-mode .accordion-button::after {
+    filter: brightness(1); /* Делаем стрелку белой */
+}
+
+/* При открытии аккордеона */
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg); /* Поворачиваем стрелку */
+}
+/* Убираем голубое выделение (focus) */
+.accordion-button:focus,
+.accordion-button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Цвет текста в кнопках аккордеона */
+.accordion-button {
+    background-color: var(--bg--color) !important;
+    color: var(--text--color) !important;
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Если аккордеон открыт */
+.accordion-button:not(.collapsed) {
+    background-color: var(--bg--color) !important;
+    color: var(--text--color) !important;
+}
+
+/* Стрелка в аккордеоне */
+.accordion-button::after {
+    filter: brightness(0); /* Черная стрелка */
+}
+
+/* В темной теме делаем стрелку белой */
+body.dark-mode .accordion-button::after {
+    filter: brightness(1);
+}
+
+/* Когда аккордеон открыт, поворачиваем стрелку */
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
 
 
 @media (max-width:991.98px) {
@@ -322,18 +422,22 @@ p{
         font-style: 24px;
     }
     .hero, 
-    .about{
+    .about,
+    .skills{
         flex-direction: column;
     }
     .hero__left,
     .hero__right,
     .about__left,
-    .about__right {
+    .about__right,
+    .skills__left,
+    .skills__right {
         padding-bottom: 10%;
         width: 100%;
     }
     .about__left{
         flex-direction: row-reverse;
+        align-items: center;
     }
 }
 
@@ -348,7 +452,7 @@ p{
 }
 @media (max-width:479.98px) {
     html{
-        
+        font-size: 16px;
     }
     h1{
         font-size: 3rem;
