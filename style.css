@@ -167,7 +167,7 @@ p{
 .hero__sub-title {
     width: 100%;
     font-family: var(--italiana);
-    text-transform: capitalize;
+    
 }
 .hero__title {
     font-family: var(--italiana);
@@ -405,7 +405,46 @@ body.dark-mode .accordion-button::after {
 .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
-
+/* end skills */
+/* start projects */
+.projects {
+    max-width: 1400px;
+    width: 100%;
+    min-height: 70vh;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: end;
+}
+.projects__left {
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
+.projects__title {
+}
+.projects__right {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 1%;
+}
+.projects__card {
+    background: var(--text--color);
+    filter:  grayscale(1) ;
+    transition: 0.3s;
+}
+.projects__card:hover{
+    filter:  grayscale(0.5) ;
+}
+.projects__card a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* end projects */
 
 @media (max-width:991.98px) {
     .page-content{
@@ -428,7 +467,8 @@ body.dark-mode .accordion-button::after {
     }
     .hero, 
     .about,
-    .skills{
+    .skills,
+    .projects{
         flex-direction: column;
     }
     .hero__left,
@@ -436,7 +476,9 @@ body.dark-mode .accordion-button::after {
     .about__left,
     .about__right,
     .skills__left,
-    .skills__right {
+    .skills__right,
+    .projects__left,
+    .projects__right {
         padding-bottom: 10%;
         width: 100%;
     }
