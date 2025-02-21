@@ -480,19 +480,21 @@ body.dark-mode .accordion-button::after {
     gap: 1%;
 }
 .projects__card {
-    background: var(--text--color);
-    filter:  grayscale(1) ;
-    transition: 0.3s;
+    background: var(--bg--color);
 }
-.projects__card:hover{
+.projects__card a img:hover{
+    transform: scale(0.9);
     filter:  grayscale(0.5) ;
     cursor: pointer;
 }
 .projects__card a img{
     width: 100%;
     height: 100%;
+    border: 1px solid rgb(198, 197, 197);
+    filter:  grayscale(1) ;
     object-fit: cover;
     object-position: center;
+    transition: 0.3s;
 }
 /* end projects */
 /* start contacts */
@@ -562,8 +564,9 @@ body.dark-mode .accordion-button::after {
     .contacts__item a:hover {
         opacity: 1;
     }
-    .projects__card:hover{
+    .projects__card a img:hover{
         filter:  grayscale(0) ;
+        transform: scale(1);
     }
     .menu_toggler, 
     .menu_burger-button {
