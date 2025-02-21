@@ -502,25 +502,29 @@ body.dark-mode .accordion-button::after {
 /* start contacts */
 .contacts {
     max-width: 1400px;
-    height: auto;
-    margin: 20px auto;
+    height: 60vh;
+    margin: 10% auto;
     display: flex;
     align-items: end;
 }
 .constant__left {
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.constant__left ul{
-    list-style: none;
-    display: flex;
-}
-.constant__left ul li{
+.constant__cv a{
+    font-family: var(--oswald);
+    color: var(--text--color);
+    text-decoration:none ;
     margin-right: 10px;
+    transition: 0.3s;
 }
-
+.constant__cv a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
 .contacts__right {
     width: 50%;
     display: flex;
@@ -561,7 +565,8 @@ body.dark-mode .accordion-button::after {
         display: none;
     }
     .header__item a:hover,
-    .contacts__item a:hover {
+    .contacts__item a:hover,
+    .constant__cv a:hover {
         opacity: 1;
     }
     .projects__card a img:hover{
