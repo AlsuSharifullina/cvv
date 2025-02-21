@@ -272,7 +272,7 @@ p{
 .about {
     max-width: 1400px;
     width: 100%;
-    min-height: 75vh;
+    min-height: 70vh;
     height: 100%;
     display: flex;
     margin: 100px auto;
@@ -299,7 +299,7 @@ p{
 .about__text {
     font-family: var(--oswald);
     color: var(--text--color);
-    text-transform: uppercase;
+    
 }
 /* end start */
 
