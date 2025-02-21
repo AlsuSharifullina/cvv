@@ -44,7 +44,7 @@ html{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 6rem;
     font-family: var(--italiana);
 }
 
@@ -313,11 +313,58 @@ p{
     margin: 100px auto;
 }
 .skills__left {
+    position: relative;
     width: 50%;
+    
+}
+.skills__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: end;
+    z-index: 11;
+
 }
-.skills__title {
+.skills__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.skills__bg img{
+    position: absolute;
+    width: 7%;
+    opacity: 0.7;
+}
+.icon__css {
+    top: 0;
+    left: 0;
+    animation: move-icon__css 4s ease-out 0s alternate infinite;
+}
+.icon__figma {
+    top: 0;
+    right: 0;
+    animation: move-icon__figma 5s ease-in-out 0s alternate infinite;
+}
+.icon__git {
+    bottom: 0;
+    left: 0;
+    animation: move-icon__git 3s linear 0s alternate infinite;
+}
+.icon__html {
+    bottom: 0;
+    right: 0;
+    animation: move-icon__html 7s ease 0s alternate infinite;
+}
+.icon__js {
+    top: 50%;
+    left: 50%;
+    animation: move-icon__js 4s ease 0s alternate infinite;
 }
 .skills__right {
     width: 50%;
@@ -446,6 +493,11 @@ body.dark-mode .accordion-button::after {
 }
 /* end projects */
 
+
+
+
+
+/* media */
 @media (max-width:991.98px) {
     .page-content{
         padding: 0 80px;
@@ -505,5 +557,84 @@ body.dark-mode .accordion-button::after {
     }
     .page-content {
         padding: 0 20px;
+    }
+}
+/* end media */
+
+/* start animation */
+@keyframes move-icon__css{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 50%;
+        left: 20%;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        left: 60%;
+    }
+}
+@keyframes move-icon__figma{
+    0%{
+        top: 0;
+        right: 0;
+    }
+    50%{
+        top: 0;
+        right: 30%;
+    }
+    100%{
+        top: 100%;
+        right: 100%;
+        opacity: 0;
+    }
+}
+@keyframes move-icon__git{
+    0%{
+        bottom: 30%;
+        left: 30%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 60%;
+        left: 100%;
+        opacity: 0;
+    }
+}
+@keyframes move-icon__html{
+    0%{
+        bottom: 0;
+        right: 0;
+    }
+    50%{
+        bottom: 30%;
+        right: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 80%;
+        right: 100%;
+    }
+}
+@keyframes move-icon__js{
+    0%{
+        top: 50%;
+        left: 0;
+        opacity: 0;
+    }
+    50%{
+        top: 50%;
+        left: 100%;
+    }
+    100%{
+        top: 80%;
+        left: 50%;
+        opacity: 0;
     }
 }
