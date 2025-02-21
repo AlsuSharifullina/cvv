@@ -41,6 +41,7 @@ body.dark-mode {
 }
 html{
     font-size: 21px;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -315,7 +316,6 @@ p{
 .skills__left {
     position: relative;
     width: 50%;
-    
 }
 .skills__content {
     position: absolute;
@@ -468,8 +468,6 @@ body.dark-mode .accordion-button::after {
     display: flex;
     align-items: end;
 }
-.projects__title {
-}
 .projects__right {
     width: 50%;
     display: grid;
@@ -492,10 +490,53 @@ body.dark-mode .accordion-button::after {
     object-position: center;
 }
 /* end projects */
-
-
-
-
+/* start contacts */
+.contacts {
+    max-width: 1400px;
+    width: 100%;
+    min-height: 70vh;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    align-items: end;
+}
+.constant__left {
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
+.contacts__title {
+}
+.contacts__right {
+    width: 50%;
+    display: flex;
+    align-items: end;
+}
+.contacts__list {
+    list-style: none;
+}
+.contacts__item {
+    margin-bottom: 10px;
+}
+.contacts__item p{
+    font-family: var(--oswald);
+    font-weight: 500;
+    color: var(--text--color);
+    margin-bottom: 0;
+    opacity: 0.5;
+}
+.contacts__item a{
+    font-family: var(--oswald);
+    font-weight: 600;
+    color: var(--text--color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.contacts__item a:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* end contacts */
 
 /* media */
 @media (max-width:991.98px) {
