@@ -6,10 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     /* font-family: "Italiana", serif; */
-    
+    cursor:default;
 }
 :root{
     --oswald:"Oswald", serif;
+    /* --italiana:"Oswald", serif; */
     --italiana:"Italiana", serif;
     --bg--color: #ffffff; 
     --text--color: #000000; 
@@ -482,6 +483,7 @@ body.dark-mode .accordion-button::after {
 }
 .projects__card:hover{
     filter:  grayscale(0.5) ;
+    cursor: pointer;
 }
 .projects__card a img{
     width: 100%;
@@ -561,7 +563,8 @@ body.dark-mode .accordion-button::after {
     .hero, 
     .about,
     .skills,
-    .projects{
+    .projects,
+    .contacts {
         flex-direction: column;
     }
     .hero__left,
@@ -571,7 +574,9 @@ body.dark-mode .accordion-button::after {
     .skills__left,
     .skills__right,
     .projects__left,
-    .projects__right {
+    .projects__right,
+    .constant__left,
+    .contacts__right  {
         padding-bottom: 10%;
         width: 100%;
     }
@@ -591,11 +596,6 @@ body.dark-mode .accordion-button::after {
 
 }
 @media (max-width:479.98px) {
-    html{
-    }
-    h1{
-        
-    }
     .page-content {
         padding: 0 20px;
     }
