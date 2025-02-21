@@ -40,11 +40,11 @@ body.dark-mode {
     color: var(--text--color);
 }
 html{
-    font-size: 20px;
+    font-size: 21px;
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: var(--italiana);
 }
 
@@ -57,8 +57,11 @@ h2{
 h3{
     font-size: 4rem;
 }
+.accordion-button h4{
+    font-size: 1rem;
+}
 p{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .header {
@@ -141,9 +144,9 @@ p{
 .hero {
     max-width: 1400px;
     width: 100%;
-    min-height: 90vh;
+    min-height: 50vh;
     height: 100%;
-    margin: 100px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -176,6 +179,7 @@ p{
 }
 .hero__right img{
     width: 100%;
+    object-fit: cover;
 }
 
 /* menu burger */
@@ -320,6 +324,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    font-family: var(--oswald);
 }
 
 /* accordoin */
@@ -452,10 +457,9 @@ body.dark-mode .accordion-button::after {
 }
 @media (max-width:479.98px) {
     html{
-        font-size: 16px;
     }
     h1{
-        font-size: 3rem;
+        
     }
     .page-content {
         padding: 0 20px;
