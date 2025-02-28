@@ -705,3 +705,8 @@ body.dark-mode .accordion-button::after {
         opacity: 0;
     }
 }
+@media (hover: none) {
+    .hover-effect {
+        pointer-events: none;
+    }
+}
