@@ -22,6 +22,10 @@ body{
     transition:  0.3s, color 0.3s;
     overflow:auto; 
 }
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
 .page-content {
     padding: 0 125px;
     overflow: auto; 
